@@ -1,0 +1,10 @@
+Membership,Value
+gpa_low,0.19999999999999996
+gpa_medium,0.40000000000000013
+gpa_high,0.0
+attendance_low,0.0
+attendance_medium,0.0
+attendance_high,1.0
+workload_low,0.0
+workload_medium,0.6666666666666669
+workload_high,0.08333333333333305

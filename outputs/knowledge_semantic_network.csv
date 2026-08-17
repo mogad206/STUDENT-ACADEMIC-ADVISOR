@@ -1,0 +1,12 @@
+Concept,Parent,Relation
+Student,,is-a
+AcademicPerformance,Student,is-a
+AttendanceBehavior,Student,is-a
+WorkloadLevel,Student,is-a
+AcademicRisk,Student,is-a
+Intervention,Student,is-a
+HighRisk,AcademicRisk,is-a
+ModerateRisk,AcademicRisk,is-a
+LowRisk,AcademicRisk,is-a
+UrgentIntervention,Intervention,is-a
+NormalIntervention,Intervention,is-a

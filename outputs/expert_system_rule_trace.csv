@@ -1,0 +1,9 @@
+Rule,Description,FV,CF,CV,Fired,Conclusion,Conclusion_Type
+R1,IF GPA is low AND Attendance is low THEN AcademicRiskHigh,0.0,0.95,0.0,False,AcademicRiskHigh,intermediate
+R2,IF GPA is low AND (Attendance is low OR Workload is high) THEN AcademicRiskHigh,0.0833,0.9,0.075,True,AcademicRiskHigh,intermediate
+R3,IF GPA is medium AND Attendance is low THEN AcademicRiskModerate,0.0,0.85,0.0,False,AcademicRiskModerate,intermediate
+R4,IF GPA is high AND Attendance is high THEN AcademicRiskLow,0.0,0.95,0.0,False,AcademicRiskLow,intermediate
+R5,IF AcademicRiskHigh THEN UrgentIntervention,0.075,0.95,0.0712,True,UrgentIntervention,final
+R6,IF AcademicRiskModerate AND Workload is high THEN UrgentIntervention,0.0,0.9,0.0,False,UrgentIntervention,final
+R7,IF AcademicRiskModerate THEN NormalIntervention,0.0,0.85,0.0,False,NormalIntervention,final
+R8,IF AcademicRiskLow THEN NormalIntervention,0.0,0.75,0.0,False,NormalIntervention,final
